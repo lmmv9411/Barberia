@@ -84,7 +84,7 @@ public class CInit {
         init.getmConsultaVenta().addActionListener(e -> {
             if (VCFactura == null || VCFactura.isClosed()) {
                 VCFactura = new VConsulta();
-                var cFactura = new CConsultaFacturas(VCFactura);
+                new CConsultaFacturas(VCFactura);
                 centrar(VCFactura);
             }
         });
